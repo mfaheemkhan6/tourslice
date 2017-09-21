@@ -11,5 +11,5 @@
     </record>
 
     <menuitem name="Complementaries" id="complementary_menu" action="complementary_action"
-              parent="event.menu_event_event" sequence="3"/>
+              parent="event.event_main_menu" sequence="3"/>
 </odoo>
