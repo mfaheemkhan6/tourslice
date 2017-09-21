@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="complementary_action" model="ir.actions.act_window">
+        <field name="name">Complementaries</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">product.template</field>
+        <field eval="False" name="view_id"/>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,kanban,form</field>
+        <field name="domain">['|',('categ_id','=','Complementaries'),('categ_id','=','complementaries')]</field>
+    </record>
+
+    <menuitem name="Complementaries" id="complementary_menu" action="complementary_action"
+              parent="event.menu_event_event" sequence="3"/>
+</odoo>
