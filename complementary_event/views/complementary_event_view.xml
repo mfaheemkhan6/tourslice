@@ -6,10 +6,10 @@
         <field name="res_model">product.template</field>
         <field eval="False" name="view_id"/>
         <field name="view_type">form</field>
-        <field name="view_mode">tree,kanban,form</field>
+        <field name="view_mode">kanban,tree,form</field>
         <field name="domain">['|',('categ_id','=','Complementaries'),('categ_id','=','complementaries')]</field>
     </record>
 
-    <menuitem name="Complementaries" id="complementary_menu" action="complementary_action"
-              parent="event.event_main_menu" sequence="3"/>
+    <menuitem name="Event Products" id="complementary_menu" action="complementary_action"
+              parent="event.event_main_menu" sequence="10"/>
 </odoo>
