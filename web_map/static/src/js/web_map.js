@@ -1,5 +1,5 @@
 odoo.define('web_map.FieldMap', function(require) {
-"use strict";
+//"use strict";
 
 var core = require('web.core');
 var form_common = require('web.form_common');

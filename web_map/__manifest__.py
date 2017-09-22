@@ -17,7 +17,7 @@ Apply the following customizations to accounting module:
         'views/event_location_view.xml',
     ],
     'qweb': [
-        'static/src/xml/*.xml',
+        'static/src/xml/web_map.xml',
     ],
     'installable': True,
 }
