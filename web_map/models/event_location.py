@@ -5,8 +5,8 @@ import ast
 
 class EventLocation(models.Model):
     _name = 'event.location'
-    _rec_name = 'latitude'
 
+    name = fields.Char(string='Name', required=True)
     point = fields.Char(string='Map')
     latitude = fields.Float(string='Latitude', compute="get_coordinates", store=True)
     longitude = fields.Float(string='longitude', compute="get_coordinates", store=True)
